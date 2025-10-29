@@ -1,6 +1,6 @@
 import java.util.*;
 
-// ✅ Encapsulation: Product class
+//  Encapsulation: Product class
 class Product {
     private String name;
     private double price;
@@ -29,7 +29,7 @@ class Product {
     }
 }
 
-// ✅ Polymorphism via Discount classes
+//  Polymorphism via Discount classes
 abstract class Discount {
     public abstract double applyDiscount(double total, List<Product> products);
 }
@@ -54,7 +54,7 @@ class BulkDiscount extends Discount {
     }
 }
 
-// ✅ Payment interface
+//  Payment interface
 interface Payment {
     void pay(double amount);
 }
@@ -66,7 +66,7 @@ class OnlinePayment implements Payment {
     }
 }
 
-// ✅ Main Class
+//  Main Class
 public class ShoppingCartApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -118,3 +118,4 @@ public class ShoppingCartApp {
         sc.close();
     }
 }
+
